@@ -1,0 +1,41 @@
+ul.tabs
+  list-style-type: none
+  margin: 0
+  padding: 0
+  li
+    border-top: solid 1px $border_tab
+    height: 50px
+    display: flex
+    align-items: center
+    background-color: $gray
+    a
+      margin-left: 10px
+      font-weight: bold
+      text-decoration: none
+      color: black
+    &.active
+      background: white
+  li:last-child
+    border-bottom: solid 1px $border_tab
+
+.clr
+  clear: both
+
+article
+  padding: 0 1em
+  text-align: left
+
+.tab_images
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  justify-content: center
+  .tab_img
+    width: 40%
+    height: 100%
+
+.tab_text
+  margin-top: 20px
+
+.block
+  border-top: solid 1px $border_tab

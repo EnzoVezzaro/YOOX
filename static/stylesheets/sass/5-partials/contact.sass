@@ -1,0 +1,47 @@
+.contact-form, .contact_form_container
+  text-align: left
+
+.contact_form_container
+  h2
+    margin: 30px 0 
+
+.contact-form
+  padding-left: 15px
+
+.submit
+  float: left
+
+.contact_field
+  width: 100%
+  padding-top: 30px
+  justify-content: space-between
+  span
+    width: 60%
+    input
+      &[type=text], &[type=email], &[type=tel]
+        /* required to properly style form
+         * elements on WebKit based browsers
+        -webkit-appearance: none
+        width: 100%
+        height: 25px
+        border: 1px solid #333
+        margin: 0
+        font-family: inherit
+        font-size: 90%
+        -moz-box-sizing: border-box
+        box-sizing: border-box
+      &:invalid
+        box-shadow: 0 0 5px 1px red
+        @include shakeAnimation()
+      &:focus:invalid
+        outline: none
+    input
+      &:valid
+        box-shadow: 0 0 5px 1px blue
+  input[type="button"]
+    width: 30%
+    height: 50px
+    margin-left: 40%
+    justify-content: center
+    color: white
+    text-align: center

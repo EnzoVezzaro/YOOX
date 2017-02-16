@@ -1,0 +1,39 @@
+
+#news_title, #news_2_container, #news_3_container
+  border-top: 1px solid $border_tab
+
+#news_title, #news_1_container, #news_2_container, #news_3_container
+  background-color: $gray
+  padding-top: 25px
+  padding-bottom: 35px
+
+.news_title
+  float: left
+
+.news_text
+  column-count: 2
+  float: right
+
+#news_title
+  padding-bottom: 0
+
+.news_text_1
+  column-count: 2
+
+.news_2_3_container
+  display: none
+
+.button_news
+  @include button($buttons)
+  p
+    text-transform: uppercase
+    color: white
+    float: left
+    padding-left: 10px
+    font-size: 9pt
+  img
+    padding-left: 10px
+    padding-right: 10px
+
+#show_less
+  display: none

@@ -1,0 +1,38 @@
+<article id="tab{{ .Params.tab }}">
+  <div class="article tab_text">
+    <p>
+      <b>Articolo:</b> {{ .Params.item.name }}
+    </p>
+  </div>
+  <div class="details tab_text">
+    <p>
+      <b>Detagli:</b> {{ .Params.item.details }}
+    </p>
+  </div>
+  <div class="material tab_text">
+    <p>
+      <b>Materiale:</b> {{ .Params.item.composition }}
+    </p>
+  </div>
+  <div class="details_model tab_text">
+    <p>
+      <b>Detagli Modella:</b>
+    </p>
+    <ul class="tab_details tab_text">
+    {{ range sort .Params.item.modelDetails }}
+        <li class="tab_dtl">{{ . }}</li>
+    {{ end }}
+    </ul>
+  </div>
+  <div class="tab_images_container">
+    <p class="tab_text">
+      <b>Foto:</b>
+    </p>
+    <div class="tab_images tab_text">
+      {{ range sort .Params.item.images }}
+        <img class="tab_img" src="{{ . }}" alt="Images Tab" />
+      {{ end }}
+    </div>
+  </div>
+
+</article>

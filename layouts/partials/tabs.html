@@ -1,0 +1,15 @@
+<div class="row center-xs outter_container" id="tabs_container">
+  <div class="row col-xs-11 col-md-9">
+    <ul class="tabs col-xs-12 col-md-4 flex-ul">
+      <li><a href="#tab1">One</a><img class="tab_arrow_right" src="images/tab/small_arrow_right.png" /></li>
+      <li><a href="#tab2">Two</a><img class="tab_arrow_right" src="images/tab/small_arrow_right.png" /></li>
+      <li><a href="#tab3">Three</a><img class="tab_arrow_right" src="images/tab/small_arrow_right.png" /></li>
+      <li><a href="#tab4">Four</a><img class="tab_arrow_right" src="images/tab/small_arrow_right.png" /></li>
+    </ul>
+    <section class="block col-xs-12 col-md-8">
+      {{ range .Data.Pages }}
+        {{ .Render "single"}}
+      {{ end }}
+    </section>
+  </div>
+</div>
