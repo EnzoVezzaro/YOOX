@@ -1,3 +1,21 @@
+
+contentDir = "content"
+layoutDir = "layouts"
+publishDir = "public"
+buildDrafts = false
+# baseurl = "https://localhost:1313/"
 baseurl = "https://enzovezzaro.github.io/YOOX/"
+canonifyURLs = true
+
 title = "YOOX Net-A-Porter Group"
 languageCode = "en-us"
+
+googleAnalytics = ""
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  description = "YOOX NET-A-PORTER GROUP is the global Internet retailing partner for leading fashion & design brands."
+  author = "Enzo Vezzaro"

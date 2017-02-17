@@ -1,8 +1,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+
     <title>{{ .Title }}</title>
-    <meta name="description" content="">
+
+    <meta name="description" content="{{ .Site.Params.description }}">
+
+    <base href="{{ .Site.BaseURL }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -14,5 +21,8 @@
 
     <!-- JS Link -->
     <script src="javascripts/vendors/modernizr-2.8.3.min.js"></script>
+
+    <!-- JQuery UI -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
 </head>
